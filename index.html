@@ -40,6 +40,28 @@
     padding: 10px;
     border-left: 5px solid #007bff;
   }
+  pre {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+  }
+  code {
+    font-family: monospace;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
   footer {
     text-align: center;
     padding: 20px;
@@ -81,6 +103,22 @@
       <li><a href="https://www.topcoder.com/" target="_blank">TopCoder</a></li>
       <li><a href="https://kaggle.com/" target="_blank">Kaggle</a></li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Basic Algorithmic Concept: Summation</h2>
+    <p>A fundamental task in competitive programming is often performing calculations efficiently. Here's a simple example of summing numbers in Python:</p>
+    <pre><code>
+def sum_up_to_n(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Example usage:
+# print(sum_up_to_n(10)) # Output: 55
+    </code></pre>
+    <p>While this loop works, for summation of consecutive numbers, a mathematical formula <code>n * (n + 1) / 2</code> is more efficient. Understanding such optimizations is key!</p>
   </section>
 
   <footer>
